@@ -6,6 +6,10 @@ public class MenuUIManager : MonoBehaviour
 {
     [SerializeField] private GameObject eventPanelUserInRange;
     [SerializeField] private GameObject eventPanelUserNotInRange;
+    bool isUiPanelActive;
+    int tempEvent;
+    [SerializeField] private EventManager eventManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,13 +22,35 @@ public class MenuUIManager : MonoBehaviour
         
     }
 
-
-    public void DisplayStartEventPanel()
+    public void DisplayStartEventPanel(int eventID)
     {
-        eventPanelUserInRange.SetActive(true);
+        if (isUiPanelActive == false)
+        {
+            tempEvent = eventID;
+            eventPanelUserInRange.SetActive(true);
+            isUiPanelActive = true;
+        }
     }
+
+    public void OnJoinButtonClick()
+    {
+        Debug.Log("ITWORKED");
+        eventManager.ActivateEvent(tempEvent);
+    }
+
     public void DisplayUserNotInRange()
     {
-        eventPanelUserNotInRange.SetActive(true);
+        if (isUiPanelActive == false)
+        {
+            eventPanelUserNotInRange.SetActive(true);
+            isUiPanelActive = true;
+        }
+    }
+
+    public void CloseButtonClick()
+    {
+        eventPanelUserInRange.SetActive(false);
+        eventPanelUserNotInRange.SetActive(false);
+        isUiPanelActive = false;
     }
 }

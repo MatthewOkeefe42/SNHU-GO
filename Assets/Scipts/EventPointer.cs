@@ -12,15 +12,19 @@ public class EventPointer : MonoBehaviour
     [SerializeField] private float amplitude = 2.0f;
     [SerializeField] private float frequency = 0.50f;
 
+
     LocationStatus playerLocation;
     public Vector2d eventPos;
+    public int eventID;
 
     MenuUIManager menuUIManager;
+    EventManager eventManager;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        menuUIManager = GameObject.Find("Canvas").GetComponent<MenuUIManager>();
+        eventManager = GameObject.Find("-EventManager").GetComponent<EventManager>();
     }
 
     // Update is called once per frame
@@ -42,9 +46,13 @@ public class EventPointer : MonoBehaviour
         var eventLocation = new GeoCoordinatePortable.GeoCoordinate(eventPos[0], eventPos[1]);  
         var distance = currentPlayerLocation.GetDistanceTo(eventLocation);
         Debug.Log("Distance is: " + distance);
-
-        //if(distance < 70)
-
-
+        if(distance < eventManager.MAX_DISTANCE)
+        {
+            menuUIManager.DisplayStartEventPanel(eventID);
+        }
+        else
+        {
+            menuUIManager.DisplayUserNotInRange();
+        }
     }
 }

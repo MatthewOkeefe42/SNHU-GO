@@ -35,8 +35,8 @@
                 var locationString = _locationStrings[i];
                 _locations[i] = Conversions.StringToLatLon(locationString);
                 var instance = Instantiate(_markerPrefab);
-                instance.GetComponent<EventPointer>().eventPos = _locations[i]; 
-
+                instance.GetComponent<EventPointer>().eventPos = _locations[i];
+                instance.GetComponent<EventPointer>().eventID = (i + 1);
                 instance.transform.localPosition = _map.GeoToWorldPosition(_locations[i], true);
                 instance.transform.localScale = new Vector3(_spawnScale, _spawnScale, _spawnScale);
                 _spawnedObjects.Add(instance);

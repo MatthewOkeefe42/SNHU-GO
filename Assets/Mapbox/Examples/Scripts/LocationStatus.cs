@@ -9,7 +9,6 @@
 
 	public class LocationStatus : MonoBehaviour
 	{
-
 		[SerializeField]
 		Text _statusText;
 
@@ -61,6 +60,4 @@
 			return currLoc.LatitudeLongitude.y;
 		}
 	}
-
-
 }

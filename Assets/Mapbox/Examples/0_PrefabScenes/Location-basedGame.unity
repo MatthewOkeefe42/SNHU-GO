@@ -485,7 +485,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 204322529}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1220223453}
+        m_TargetAssemblyTypeName: MenuUIManager, Assembly-CSharp
+        m_MethodName: CloseButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &204322529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -606,7 +618,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 256874208}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1220223453}
+        m_TargetAssemblyTypeName: MenuUIManager, Assembly-CSharp
+        m_MethodName: OnJoinButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &256874208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2413,7 +2437,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 868554053}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1220223453}
+        m_TargetAssemblyTypeName: MenuUIManager, Assembly-CSharp
+        m_MethodName: CloseButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &868554053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2516,6 +2552,51 @@ LightingSettings:
   m_PVRTiledBaking: 0
   m_NumRaysToShootPerTexel: -1
   m_RespectSceneVisibilityWhenBakingGI: 0
+--- !u!1 &1167606389
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1167606391}
+  - component: {fileID: 1167606390}
+  m_Layer: 0
+  m_Name: -EventManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1167606390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167606389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab973cf0cf54ac841ba56b4e218ae996, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MAX_DISTANCE: 70
+--- !u!4 &1167606391
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167606389}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1188978833
 GameObject:
   m_ObjectHideFlags: 0
@@ -2717,6 +2798,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventPanelUserInRange: {fileID: 443225881}
   eventPanelUserNotInRange: {fileID: 865406034}
+  eventManager: {fileID: 1167606390}
 --- !u!1 &1270333062
 GameObject:
   m_ObjectHideFlags: 0
@@ -2764,8 +2846,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _map: {fileID: 1898406467}
   _locationStrings:
-  - 43.039131059189785, -71.45224734302522
-  - 43.04009271873252, -71.45279916145884
+  - 43.03963827481188, -71.45188048219374
+  - 43.04009181237417, -71.4528071221834
+  - 43.03911246624349, -71.45209979455768
+  - 43.04155620086677, -71.45294556973334
   _spawnScale: 0.05
   _markerPrefab: {fileID: 1858286666362292, guid: def5518fa4f92f84ca7748e56b1614b4, type: 3}
 --- !u!114 &1270333065
@@ -2786,6 +2870,7 @@ MonoBehaviour:
   eventPos:
     x: 0
     y: 0
+  eventID: 0
 --- !u!1 &1279141595
 GameObject:
   m_ObjectHideFlags: 0
@@ -3248,3 +3333,4 @@ SceneRoots:
   - {fileID: 1188978836}
   - {fileID: 773682131}
   - {fileID: 1270333063}
+  - {fileID: 1167606391}
