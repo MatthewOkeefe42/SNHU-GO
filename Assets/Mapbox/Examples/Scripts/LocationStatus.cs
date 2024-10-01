@@ -22,7 +22,6 @@
 			}
 		}
 
-
 		void Update()
 		{
 			currLoc = _locationProvider.CurrentLocation;

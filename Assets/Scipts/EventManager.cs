@@ -22,19 +22,11 @@ public class EventManager : MonoBehaviour
     {
         if (eventID == 1) // Dining Hall
         {
-            SceneManager.LoadScene("Dining Hall");
+            SceneManager.LoadScene("Dining Hall"); 
         }
         if (eventID == 2) // SNHU Green
         {
-            SceneManager.LoadScene("SNHU Green Area");
+            SceneManager.LoadScene("Green Space");
         }
-        if (eventID == 3) // Shapiro Library Monument
-        {
-            SceneManager.LoadScene("Library");
-        }
-        if (eventID == 4) // Seta Building
-        {
-            SceneManager.LoadScene("SETA Building");
-        } 
     }
 }
