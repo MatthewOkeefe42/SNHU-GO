@@ -40,14 +40,14 @@ public class Login : MonoBehaviour
         if(username.Length < 3 || username.Length > 24)
         {
             alertText.text = "Invalid username";
-            loginButton.interactable = true;
+            ActivateButtons(true);
             yield break;
         }
 
         if (password.Length < 3 || password.Length > 24)
         {
             alertText.text = "Invalid password";
-            loginButton.interactable = true;
+            ActivateButtons(true);
             yield break;
         }
 
@@ -73,6 +73,10 @@ public class Login : MonoBehaviour
         }
 
         if (request.result == UnityWebRequest.Result.Success)
+
+            //Debug.Log(request.downloadHandler.text);
+            //LoginResponse response = JsonUtility.FromJson<LoginResponse>(request.downloadHandler.text);
+
         {   // Login Success?
             if (request.downloadHandler.text != "Invalid credentials")
             {
