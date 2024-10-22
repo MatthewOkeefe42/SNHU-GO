@@ -22,7 +22,6 @@ public class MenuUIManager : MonoBehaviour
     {
         
     }
-
     public void DisplayStartEventPanel(int eventID)
     {
         if (isUiPanelActive == false)
@@ -57,6 +56,7 @@ public class MenuUIManager : MonoBehaviour
 
     public void OnEventsListClick()
     {
+        Debug.Log("Clicked");
         SceneManager.LoadScene("EventsList");
     }
 }
