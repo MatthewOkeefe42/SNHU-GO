@@ -1333,7 +1333,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 13.715393, y: -1398.9098}
+  m_AnchoredPosition: {x: 13.715332, y: -1398.9097}
   m_SizeDelta: {x: 117.5947, y: -2621.7812}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1263545893
@@ -1497,9 +1497,14 @@ MonoBehaviour:
   headColor: {fileID: 439688013}
   legColor: {fileID: 1810279539}
   options:
-  - {fileID: 2100000, guid: b4da84c5c49be450c8502c76826ffc3f, type: 2}
-  - {fileID: 2100000, guid: 86f71d3c44c394b9c851347cec33b98f, type: 2}
-  - {fileID: 2100000, guid: b45d1a21770e64c52a90af3260e1f91e, type: 2}
+  - {fileID: 2100000, guid: b1addc201a9fab6488c7e6228807ed56, type: 2}
+  - {fileID: 2100000, guid: b1edd5979850e2542a1244cb4faab1de, type: 2}
+  - {fileID: 2100000, guid: e342451aefd482440a064fbb82c4c835, type: 2}
+  - {fileID: 2100000, guid: da8218ca28d103b4a991aacc1e75902c, type: 2}
+  - {fileID: 2100000, guid: 45f32dda3f93b2c4ba1707ee5ce1dc37, type: 2}
+  - {fileID: 2100000, guid: fafb1cb52237ddc4f96996f7ed5c6dec, type: 2}
+  - {fileID: 2100000, guid: 8fd3b5a649cecde4db8bdb93cb09002e, type: 2}
+  - {fileID: 2100000, guid: 5188b5f7d0990e646bc4c96a6ffeb79c, type: 2}
 --- !u!1 &1399295101
 GameObject:
   m_ObjectHideFlags: 0
