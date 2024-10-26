@@ -190,6 +190,7 @@
     <Compile Include="Assets\Mapbox\Examples\Scripts\LabelTextSetter.cs" />
     <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Utils\JsonConverters\BboxToGeoCoordinateBoundsConverter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
+    <Compile Include="Assets\Scipts\CharacterCreatorScripts\ShirtColorChanger.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\Mapbox\Unity\SourceLayers\ISubLayerExtrusionOptions.cs" />
     <Compile Include="Assets\Mapbox\Examples\Scripts\HeroBuildingSelectionUserInput.cs" />
@@ -340,6 +341,7 @@
     <Compile Include="Assets\Mapbox\Unity\LayerProperties\ImageryLayerProperties.cs" />
     <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Geocoding\Geocoder.cs" />
     <Compile Include="Assets\Mapbox\Unity\Map\TileProviders\AbstractTileProvider.cs" />
+    <Compile Include="Assets\Scipts\CharacterCreatorScripts\HairColorChanger.cs" />
     <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Map\TileErrorEventArgs.cs" />
     <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Data\KdTree\KDTree.cs" />
     <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Data\KdTree\IntervalHeap.cs" />
