@@ -4697,8 +4697,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SkinColorChanger, Assembly-CSharp
+      - m_Target: {fileID: 1601251840}
+        m_TargetAssemblyTypeName: HairColorChanger, Assembly-CSharp
         m_MethodName: prevOption
         m_Mode: 1
         m_Arguments:
@@ -6001,10 +6001,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HairColor: {fileID: 1790020525}
   options:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 07c3f21454b5fce4eb9d8f66aa09252d, type: 2}
+  - {fileID: 2100000, guid: b1b57705ea9f3e04ab276bcc02ce2f48, type: 2}
+  - {fileID: 2100000, guid: 82786648382b1454cbfec39451d80860, type: 2}
+  - {fileID: 2100000, guid: bf86fbe589502974c98c11f2f60b5b71, type: 2}
+  - {fileID: 2100000, guid: 2b42c8095ef20b34ca09cca55f3cf89a, type: 2}
+  - {fileID: 2100000, guid: 2e6ccca03d2e4434d90227d625aa446c, type: 2}
+  - {fileID: 2100000, guid: b650a720826632841ade29b5311b20c3, type: 2}
 --- !u!1 &1626330246
 GameObject:
   m_ObjectHideFlags: 0
@@ -6724,8 +6727,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SkinColorChanger, Assembly-CSharp
+      - m_Target: {fileID: 1601251840}
+        m_TargetAssemblyTypeName: HairColorChanger, Assembly-CSharp
         m_MethodName: nextOption
         m_Mode: 1
         m_Arguments:
@@ -7211,7 +7214,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 516, y: 575}
+  m_AnchoredPosition: {x: 515, y: 575}
   m_SizeDelta: {x: 503.5854, y: 180.6353}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1934128996
