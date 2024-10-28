@@ -84,7 +84,6 @@ public class Login : MonoBehaviour
                 ActivateButtons(false);
                 GameAccount returnedAccount = JsonUtility.FromJson<GameAccount>(request.downloadHandler.text);
                 alertText.text = "Welcome " + returnedAccount.username + ((returnedAccount.adminFlag == 1) ? " Admin" : "");
-c
             }
             else
             {   

@@ -6,5 +6,5 @@ public class GameAccount
     public int adminFlag;
     public string username;
 
-    // public string profileName;
+    public string profileName;
 }
