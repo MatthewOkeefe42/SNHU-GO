@@ -2145,8 +2145,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SkinColorChanger, Assembly-CSharp
+      - m_Target: {fileID: 2087723265}
+        m_TargetAssemblyTypeName: ShirtColorChanger, Assembly-CSharp
         m_MethodName: prevOption
         m_Mode: 1
         m_Arguments:
@@ -2278,8 +2278,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SkinColorChanger, Assembly-CSharp
+      - m_Target: {fileID: 1290423949}
+        m_TargetAssemblyTypeName: PantsColorChanger, Assembly-CSharp
         m_MethodName: prevOption
         m_Mode: 1
         m_Arguments:
@@ -2700,6 +2700,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 660063711}
   m_CullTransparentMesh: 1
+--- !u!137 &696748338 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6761708314861323176, guid: 9c9611b4be2a4f2468ddb546dd2f2e7f, type: 3}
+  m_PrefabInstance: {fileID: 1424252645}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &774797168
 GameObject:
   m_ObjectHideFlags: 0
@@ -3191,8 +3196,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SkinColorChanger, Assembly-CSharp
+      - m_Target: {fileID: 2062282492}
+        m_TargetAssemblyTypeName: HairChange, Assembly-CSharp
         m_MethodName: nextOption
         m_Mode: 1
         m_Arguments:
@@ -3324,8 +3329,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SkinColorChanger, Assembly-CSharp
+      - m_Target: {fileID: 1290423949}
+        m_TargetAssemblyTypeName: PantsColorChanger, Assembly-CSharp
         m_MethodName: nextOption
         m_Mode: 1
         m_Arguments:
@@ -4509,6 +4514,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1290423948}
+  - component: {fileID: 1290423949}
   m_Layer: 5
   m_Name: PantsColorSelector
   m_TagString: Untagged
@@ -4538,6 +4544,26 @@ RectTransform:
   m_AnchoredPosition: {x: 504, y: -664}
   m_SizeDelta: {x: 204.7659, y: 113.8557}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1290423949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290423947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bf94a069bc693c45b1d0474a54fc584, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pantsColor: {fileID: 696748338}
+  options:
+  - {fileID: 2100000, guid: 5fd3b14d74aef0c43bec804995d9d57b, type: 2}
+  - {fileID: 2100000, guid: 1dff1992c101589408f902d83dc01b8a, type: 2}
+  - {fileID: 2100000, guid: 6a470ee52602e8844b70dcbcaef80177, type: 2}
+  - {fileID: 2100000, guid: 9bff05800eb0d484f876e746fd419b76, type: 2}
+  - {fileID: 2100000, guid: d639df58e1df28a4b8b5f135877d4ae4, type: 2}
+  - {fileID: 2100000, guid: a72a9951b34a4ef448ec1029bee430ef, type: 2}
 --- !u!1 &1307800899
 GameObject:
   m_ObjectHideFlags: 0
@@ -6185,8 +6211,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SkinColorChanger, Assembly-CSharp
+      - m_Target: {fileID: 2087723265}
+        m_TargetAssemblyTypeName: ShirtColorChanger, Assembly-CSharp
         m_MethodName: nextOption
         m_Mode: 1
         m_Arguments:
@@ -6994,8 +7020,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SkinColorChanger, Assembly-CSharp
+      - m_Target: {fileID: 2062282492}
+        m_TargetAssemblyTypeName: HairChange, Assembly-CSharp
         m_MethodName: prevOption
         m_Mode: 1
         m_Arguments:
@@ -7005,7 +7031,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
 --- !u!114 &1908948559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7576,6 +7602,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2062282491}
+  - component: {fileID: 2062282492}
   m_Layer: 5
   m_Name: HairSelector
   m_TagString: Untagged
@@ -7605,6 +7632,22 @@ RectTransform:
   m_AnchoredPosition: {x: -309, y: 237.6594}
   m_SizeDelta: {x: 190.21, y: 101.7477}
   m_Pivot: {x: 0.5000002, y: 4.068563}
+--- !u!114 &2062282492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062282490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a83808420293a334c85473548697b5b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hair: {fileID: 1790020525}
+  options:
+  - {fileID: -9143450767860132912, guid: 9c9611b4be2a4f2468ddb546dd2f2e7f, type: 3}
+  - {fileID: 6454519561255222452, guid: a6a7dda3ad7c04a428059b340c502159, type: 3}
 --- !u!1 &2076831781
 GameObject:
   m_ObjectHideFlags: 0
@@ -7792,11 +7835,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShirtColor: {fileID: 940321480}
   options:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: c28130f23683c9c4bb90c2a402e039b4, type: 2}
+  - {fileID: 2100000, guid: 3e88c1d1d04349a409652222abae31bb, type: 2}
+  - {fileID: 2100000, guid: 50689e4710078454fbd1ce8650b56e44, type: 2}
+  - {fileID: 2100000, guid: f07a5372eef9c3642a30ea027e242e6e, type: 2}
+  - {fileID: 2100000, guid: 7f27faae7851937468bd22b2731a10ab, type: 2}
+  - {fileID: 2100000, guid: df8aa61ad2e4bff409525dea71cb12b4, type: 2}
+  - {fileID: 2100000, guid: 6216a941e5e4180448355df764520937, type: 2}
+  - {fileID: 2100000, guid: 8759d0d2a37c53a4aaa8432f8696c9c6, type: 2}
+  - {fileID: 2100000, guid: 3cc7df8cb95d94944a80c41c8d69bb60, type: 2}
+  - {fileID: 2100000, guid: 387afeb82a59bc9468f2f4f86a55768b, type: 2}
 --- !u!1 &2099732058
 GameObject:
   m_ObjectHideFlags: 0
