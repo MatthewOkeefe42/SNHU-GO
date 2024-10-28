@@ -3,6 +3,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine.Networking;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Login : MonoBehaviour
 {
@@ -83,6 +84,7 @@ public class Login : MonoBehaviour
                 ActivateButtons(false);
                 GameAccount returnedAccount = JsonUtility.FromJson<GameAccount>(request.downloadHandler.text);
                 alertText.text = "Welcome " + returnedAccount.username + ((returnedAccount.adminFlag == 1) ? " Admin" : "");
+c
             }
             else
             {   

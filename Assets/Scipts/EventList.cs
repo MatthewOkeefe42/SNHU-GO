@@ -8,22 +8,15 @@ public class EventList : MonoBehaviour
 {
     [SerializeField] private string eventEndpoint = "http://127.0.0.1:13756/events"; // URI
 
+    [SerializeField] private GameObject eventPrefab;     // Event prefab to display individual events
+    [SerializeField] private Transform contentPanel;     // Content panel inside the scroll view
     [SerializeField] public TextMeshProUGUI eventNameText;
     [SerializeField] public TextMeshProUGUI eventLocationText;
     [SerializeField] public TextMeshProUGUI eventBioText;
     [SerializeField] public TextMeshProUGUI eventTimeText;
     [SerializeField] public RawImage eventImage;
 
-    [System.Serializable]
-    public class EventData
-    {
-        public int eventId; // Event ID, corresponds to eventId field in MongoDB
-        public string eventName; // Event name, corresponds to eventName field in MongoDB
-        public string eventBio; // Event bio or description, corresponds to eventBio field in MongoDB
-        public string eventLocation; // Event location as a string, corresponds to eventLocation field in MongoDB
-        public string eventTime; // Event time as a string, corresponds to eventTime field in MongoDB
-        public string eventImageUrl;
-    }
+    private const int maxEvents = 10; // Limit number of events to 10
 
     void Start()
     {
@@ -44,29 +37,48 @@ public class EventList : MonoBehaviour
             // Parse the JSON response
             EventData[] events = JsonHelper.FromJson<EventData>(request.downloadHandler.text);
 
-            foreach (EventData eventData in events)
+            int eventCount = Mathf.Min(events.Length, maxEvents); // Limit to 10 events
+            for (int i = 0; i < eventCount; i++)
             {
-                eventNameText.text = eventData.eventName;
-                eventLocationText.text = eventData.eventLocation;
-                eventBioText.text = eventData.eventBio;
-                eventTimeText.text = eventData.eventTime;
+                EventData eventData = events[i];
 
-                // Start downloading the event image
-                StartCoroutine(LoadImage(eventData.eventImageUrl));
+                // Instantiate a new event UI element (Prefab)
+                GameObject newEvent = Instantiate(eventPrefab, contentPanel);
+
+                // Find and update text elements in the prefab
+                newEvent.transform.Find("EventName").GetComponent<TextMeshProUGUI>().text = eventData.eventName;
+                newEvent.transform.Find("EventLocation").GetComponent<TextMeshProUGUI>().text = eventData.eventLocation;
+                newEvent.transform.Find("EventBio").GetComponent<TextMeshProUGUI>().text = eventData.eventBio;
+                newEvent.transform.Find("EventTime").GetComponent<TextMeshProUGUI>().text = eventData.eventTime;
+
+                // Load and apply the event image
+                StartCoroutine(LoadImage(eventData.eventImageUrl, newEvent.transform.Find("EventImage").GetComponent<RawImage>()));
             }
         }
     }
 
-    private IEnumerator LoadImage(string imageUrl)
+    private IEnumerator LoadImage(string imageUrl, RawImage eventImage)
     {
+        if (string.IsNullOrEmpty(imageUrl))
+        {
+            Debug.LogError("Image URL is null or empty.");
+            yield break;
+        }
+
         UnityWebRequest imageRequest = UnityWebRequestTexture.GetTexture(imageUrl);
         yield return imageRequest.SendWebRequest();
 
         if (imageRequest.result == UnityWebRequest.Result.Success)
         {
-            // Apply the downloaded texture to the RawImage component
             Texture2D texture = ((DownloadHandlerTexture)imageRequest.downloadHandler).texture;
-            eventImage.texture = texture;
+            if (texture != null)
+            {
+                eventImage.texture = texture;  // Apply the downloaded texture to the passed-in RawImage
+            }
+            else
+            {
+                Debug.LogError("Downloaded texture is null.");
+            }
         }
         else
         {
