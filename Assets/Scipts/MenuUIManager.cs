@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuUIManager : MonoBehaviour
 {
@@ -21,7 +22,6 @@ public class MenuUIManager : MonoBehaviour
     {
         
     }
-
     public void DisplayStartEventPanel(int eventID)
     {
         if (isUiPanelActive == false)
@@ -52,5 +52,11 @@ public class MenuUIManager : MonoBehaviour
         eventPanelUserInRange.SetActive(false);
         eventPanelUserNotInRange.SetActive(false);
         isUiPanelActive = false;
+    }
+
+    public void OnEventsListClick()
+    {
+        Debug.Log("Clicked");
+        SceneManager.LoadScene("EventsList");
     }
 }

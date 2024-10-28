@@ -7,6 +7,7 @@ public class EventManager : MonoBehaviour
 {
     public int MAX_DISTANCE = 70;
     // Start is called before the first frame update
+
     void Start()
     {
 
