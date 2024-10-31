@@ -32,7 +32,6 @@ public class Login : MonoBehaviour
         StartCoroutine(TryCreate());
     }
 
-
     private IEnumerator TryLogin()
     {
         string username = usernameInputField.text;
@@ -84,7 +83,6 @@ public class Login : MonoBehaviour
                 ActivateButtons(false);
                 GameAccount returnedAccount = JsonUtility.FromJson<GameAccount>(request.downloadHandler.text);
                 alertText.text = "Welcome " + returnedAccount.username + ((returnedAccount.adminFlag == 1) ? " Admin" : "");
-c
             }
             else
             {   
@@ -149,6 +147,7 @@ c
             {
                 GameAccount returnedAccount = JsonUtility.FromJson<GameAccount>(request.downloadHandler.text);
                 alertText.text = "Account created";
+                SceneManager.LoadScene("CharacterCreation");
             }
             else
             {
