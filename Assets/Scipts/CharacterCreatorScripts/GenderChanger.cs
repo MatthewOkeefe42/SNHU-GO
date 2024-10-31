@@ -21,7 +21,7 @@ public class GenderChanger : MonoBehaviour
     public List<Mesh> Meshes = new List<Mesh>();
 
 
-    public void ChangeToFemale()
+    public void Change()
     {
 
         Head.sharedMesh = Meshes[0];
