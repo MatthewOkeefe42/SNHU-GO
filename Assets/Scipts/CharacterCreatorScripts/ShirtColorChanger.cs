@@ -17,6 +17,7 @@ public class ShirtColorChanger : MonoBehaviour
     private int currentOption = 0;
     public void nextOption()
     {
+        
         currentOption++;
 
         if (currentOption >= options.Count)
