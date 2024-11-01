@@ -7238,7 +7238,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 0
+        m_CallState: 2
 --- !u!114 &1908948559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8009,6 +8009,7 @@ MonoBehaviour:
   - {fileID: 5949695006547949565, guid: 099870eb68de6a44e98b329c0e29f234, type: 3}
   - {fileID: 7666266049737368757, guid: 099870eb68de6a44e98b329c0e29f234, type: 3}
   - {fileID: 0}
+  isMale: 1
 --- !u!1 &2062282490
 GameObject:
   m_ObjectHideFlags: 0
@@ -8061,8 +8062,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Hair: {fileID: 1790020525}
-  options:
+  gender: {fileID: 2025705549}
+  MaleHairOptions:
+  - {fileID: 0}
   - {fileID: -9143450767860132912, guid: 9c9611b4be2a4f2468ddb546dd2f2e7f, type: 3}
+  - {fileID: -3178576508544696699, guid: d7a4ea9981d499f439a0b21ab223c9cf, type: 3}
+  FemaleHairOptions:
+  - {fileID: -3178576508544696699, guid: d7a4ea9981d499f439a0b21ab223c9cf, type: 3}
+  - {fileID: -3178576508544696699, guid: 099870eb68de6a44e98b329c0e29f234, type: 3}
   - {fileID: -3178576508544696699, guid: d7a4ea9981d499f439a0b21ab223c9cf, type: 3}
 --- !u!1 &2076831781
 GameObject:
