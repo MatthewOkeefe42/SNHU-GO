@@ -445,6 +445,7 @@
     <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Map\RawPngRasterTile.cs" />
     <Compile Include="Assets\Mapbox\Unity\Map\Interfaces\IMap.cs" />
     <Compile Include="Assets\Mapbox\Examples\Scripts\ObjectInspectorModifier.cs" />
+    <Compile Include="Assets\Scipts\CharacterCreatorScripts\AppearanceChanger.cs" />
     <Compile Include="Assets\Mapbox\Unity\SourceLayers\MapboxDefaultStyles.cs" />
     <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Modifiers\GameObjectModifiers\DisableMeshRendererModifier.cs" />
     <Compile Include="Assets\Mapbox\Unity\Utilities\NodeEditorElementAttribute.cs" />
