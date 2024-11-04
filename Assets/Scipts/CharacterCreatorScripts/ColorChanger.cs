@@ -154,6 +154,37 @@ public class ColorChanger : MonoBehaviour
     }
 
 
+    //Shoes Color
+    public void nextShoesColorOption()
+    {
+        currentShoesColorOption++;
+
+        if (currentShoesColorOption >= ShoesColorOptions.Count)
+        {
+
+            currentShoesColorOption = 0;
+        }
+
+        Shoes.material = ShoesColorOptions[currentShoesColorOption];
+
+
+    }
+
+    public void prevShoesColorOption()
+    {
+        currentShoesColorOption--;
+
+        if (currentShoesColorOption <= 0)
+        {
+
+            currentShoesColorOption = ShoesColorOptions.Count - 1;
+        }
+        Shoes.material = ShoesColorOptions[currentShoesColorOption];
+
+
+    }
+
+
 
 
 
