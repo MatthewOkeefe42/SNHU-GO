@@ -18,20 +18,33 @@ public class GenderChanger : MonoBehaviour
 
 
     [Header("Mesh to Cycle Through")]
-    public List<Mesh> Meshes = new List<Mesh>();
-
-
-    public void Change()
+    public List<Mesh> MaleMeshes = new List<Mesh>();
+    public List<Mesh> FMeshes = new List<Mesh>();
+   public bool isMale = true;
+    public void ChangeToMale()
     {
 
-        Head.sharedMesh = Meshes[0];
-        Hair.sharedMesh = Meshes[1];
-        shirt.sharedMesh = Meshes[2];    
-        Body.sharedMesh = Meshes[3];    
-        Legs.sharedMesh = Meshes[4];
-        pants.sharedMesh = Meshes[5];
-        Shoes.sharedMesh = Meshes[6];
+        isMale = true;
+            Head.sharedMesh = MaleMeshes[0];
+            Hair.sharedMesh = MaleMeshes[1];
+            shirt.sharedMesh = MaleMeshes[2];
+            Body.sharedMesh = MaleMeshes[3];
+            Legs.sharedMesh = MaleMeshes[4];
+            pants.sharedMesh = MaleMeshes[5];
+            Shoes.sharedMesh = MaleMeshes[6];
         
+    }
+    public void ChangeToFemale()
+    {
+        isMale = false;
+
+        Head.sharedMesh = FMeshes[0];
+        Hair.sharedMesh = FMeshes[1];
+        shirt.sharedMesh = FMeshes[2];
+        Body.sharedMesh = FMeshes[3];
+        Legs.sharedMesh = FMeshes[4];
+        pants.sharedMesh = FMeshes[5];
+        Shoes.sharedMesh = FMeshes[6];
 
     }
 
