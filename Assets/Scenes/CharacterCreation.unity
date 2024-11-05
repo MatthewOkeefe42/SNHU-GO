@@ -3669,9 +3669,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairChange, Assembly-CSharp
-        m_MethodName: nextOption
+      - m_Target: {fileID: 2072754963}
+        m_TargetAssemblyTypeName: AppearanceChanger, Assembly-CSharp
+        m_MethodName: nextHairOption
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7030,9 +7030,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HairChange, Assembly-CSharp
-        m_MethodName: prevOption
+      - m_Target: {fileID: 2072754963}
+        m_TargetAssemblyTypeName: AppearanceChanger, Assembly-CSharp
+        m_MethodName: prevHairOption
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7904,13 +7904,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6c29bd0a5e2db8488e4f2af34da027e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Hair: {fileID: 0}
-  Shirt: {fileID: 0}
-  Pants: {fileID: 0}
-  Shoes: {fileID: 0}
+  Hair: {fileID: 53071648}
+  Shirt: {fileID: 1926792427}
+  Pants: {fileID: 2079838018}
+  Shoes: {fileID: 225961876}
   gender: {fileID: 2025705549}
-  MaleHairOptions: []
-  FemaleHairOptions: []
+  MaleHairOptions:
+  - {fileID: 6454519561255222452, guid: a6a7dda3ad7c04a428059b340c502159, type: 3}
+  - {fileID: -9143450767860132912, guid: 9aeea3f3716c0f44bb0e7ea7cf5145ff, type: 3}
+  FemaleHairOptions:
+  - {fileID: -3178576508544696699, guid: 099870eb68de6a44e98b329c0e29f234, type: 3}
+  - {fileID: -9143450767860132912, guid: 32a20255fc4512242b76de3547be23dc, type: 3}
   MaleShirtOptions: []
   FemaleShirtOptions: []
   MalePantsOptions: []
