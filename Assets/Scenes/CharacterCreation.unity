@@ -7834,15 +7834,15 @@ MonoBehaviour:
   - {fileID: 2959467708922500008, guid: 9c9611b4be2a4f2468ddb546dd2f2e7f, type: 3}
   - {fileID: 5949695006547949565, guid: 9c9611b4be2a4f2468ddb546dd2f2e7f, type: 3}
   - {fileID: 7666266049737368757, guid: 9c9611b4be2a4f2468ddb546dd2f2e7f, type: 3}
-  - {fileID: -278085929633702562, guid: b8bffb689d2f0da4e9b66f05d659894c, type: 3}
+  - {fileID: -278085929633702562, guid: 9aeea3f3716c0f44bb0e7ea7cf5145ff, type: 3}
   FMeshes:
-  - {fileID: -8839368762345780380, guid: 32a20255fc4512242b76de3547be23dc, type: 3}
-  - {fileID: -9143450767860132912, guid: 32a20255fc4512242b76de3547be23dc, type: 3}
-  - {fileID: -3663755988386481246, guid: 32a20255fc4512242b76de3547be23dc, type: 3}
-  - {fileID: 2959467708922500008, guid: 32a20255fc4512242b76de3547be23dc, type: 3}
-  - {fileID: 5949695006547949565, guid: 32a20255fc4512242b76de3547be23dc, type: 3}
-  - {fileID: 7666266049737368757, guid: 32a20255fc4512242b76de3547be23dc, type: 3}
-  - {fileID: -278085929633702562, guid: 32a20255fc4512242b76de3547be23dc, type: 3}
+  - {fileID: -8839368762345780380, guid: 49b12078ebb6db247bac4161f6aaaa63, type: 3}
+  - {fileID: -9143450767860132912, guid: 49b12078ebb6db247bac4161f6aaaa63, type: 3}
+  - {fileID: -3663755988386481246, guid: 49b12078ebb6db247bac4161f6aaaa63, type: 3}
+  - {fileID: 2959467708922500008, guid: 49b12078ebb6db247bac4161f6aaaa63, type: 3}
+  - {fileID: 5949695006547949565, guid: 49b12078ebb6db247bac4161f6aaaa63, type: 3}
+  - {fileID: 7666266049737368757, guid: 49b12078ebb6db247bac4161f6aaaa63, type: 3}
+  - {fileID: -278085929633702562, guid: 49b12078ebb6db247bac4161f6aaaa63, type: 3}
   isMale: 1
 --- !u!1 &2072754961
 GameObject:
@@ -7912,9 +7912,11 @@ MonoBehaviour:
   MaleHairOptions:
   - {fileID: 6454519561255222452, guid: a6a7dda3ad7c04a428059b340c502159, type: 3}
   - {fileID: -9143450767860132912, guid: 9aeea3f3716c0f44bb0e7ea7cf5145ff, type: 3}
+  - {fileID: -9143450767860132912, guid: 9aeea3f3716c0f44bb0e7ea7cf5145ff, type: 3}
   FemaleHairOptions:
   - {fileID: -3178576508544696699, guid: 099870eb68de6a44e98b329c0e29f234, type: 3}
   - {fileID: -9143450767860132912, guid: 32a20255fc4512242b76de3547be23dc, type: 3}
+  - {fileID: -2439352532998724759, guid: 50ef024a375deb247b61d9f7c2cf16fd, type: 3}
   MaleShirtOptions: []
   FemaleShirtOptions: []
   MalePantsOptions: []
