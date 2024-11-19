@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/LoginUI.uss?fileID=7433441132597879392&amp;guid=28fc983fe2ba55b4dba87fa39602ed8b&amp;type=3#LoginUI" />
+    <ui:VisualElement name="Login_Conatainer" style="flex-grow: 1;">
+        <ui:Label tabindex="-1" text="Login" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+        <ui:TextField picking-mode="Ignore" label="Username" value="filler text" name="usernamefield" style="height: 44px; align-items: flex-start; justify-content: space-between;" />
+        <ui:TextField picking-mode="Ignore" label="Password" value="filler text" name="passwordfield" />
+        <ui:Button text="Login" parse-escape-sequences="true" display-tooltip-when-elided="true" name="loginButton" />
+        <ui:Button text="Register" parse-escape-sequences="true" display-tooltip-when-elided="true" name="registerButton" />
+    </ui:VisualElement>
+</ui:UXML>

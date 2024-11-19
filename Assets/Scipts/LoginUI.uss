@@ -1,0 +1,11 @@
+#usernameField, #passwordField {
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+#loginButton, #registerButton {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    padding: 5px;
+}
