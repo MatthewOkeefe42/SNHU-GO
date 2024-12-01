@@ -1,8 +1,6 @@
-//[SerializeField] Shows field in inspector GUI
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-// Mapbox Library
 using Mapbox.Examples;
 using Mapbox.Utils;
 
@@ -11,7 +9,6 @@ public class EventPointer : MonoBehaviour
     [SerializeField] private float rotationSpeed = 50f;
     [SerializeField] private float amplitude = 2.0f;
     [SerializeField] private float frequency = 0.50f;
-
 
     LocationStatus playerLocation;
     public Vector2d eventPos;

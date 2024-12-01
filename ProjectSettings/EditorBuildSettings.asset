@@ -5,13 +5,31 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Mapbox/Examples/0_PrefabScenes/Location-basedGame.unity
     guid: 42f6aa7ce7a604f16ade319663f46ceb
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SNHU Green Area.unity
     guid: 098807edaa1c38e429573693229c4d46
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Dining Hall.unity
     guid: 4f570405678ec124d9411d1ad1f66e0e
+  - enabled: 0
+    path: Assets/Scenes/EventsList.unity
+    guid: 1c10bf4e5c358f0499014c08b5c41d92
+  - enabled: 0
+    path: Assets/Scenes/CharacterCreation.unity
+    guid: 8bd403d17f700ac489d85e4b5200096f
+  - enabled: 0
+    path: Assets/Scenes/ProfileScene.unity
+    guid: f6583c30f1cd4a140b180417c3082b46
+  - enabled: 0
+    path: Assets/Scenes/EventCreation.unity
+    guid: 12bf8efcf9780664b8e5fde797073fd1
+  - enabled: 0
+    path: Assets/Scenes/FavoritesList.unity
+    guid: 2ca4915f4f564404e94807ffa2273628
+  - enabled: 1
+    path: Assets/Scenes/LoginScene.unity
+    guid: a797b1e816814584a8eecb923a656c6f
   m_configObjects: {}
