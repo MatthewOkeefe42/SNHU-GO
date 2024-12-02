@@ -218,7 +218,7 @@ Transform:
   m_GameObject: {fileID: 8030620}
   serializedVersion: 2
   m_LocalRotation: {x: 0.40373513, y: -0, z: -0, w: 0.9148759}
-  m_LocalPosition: {x: -4, y: 61.2, z: -59.4}
+  m_LocalPosition: {x: -5, y: 61.2, z: -59.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -237,8 +237,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1975551523}
-  offset: {x: 10, y: 10, z: 10}
+  offset: {x: -5, y: 61.2, z: -59.4}
   smoothSpeed: 0.125
+  rotationSpeed: 5
 --- !u!21 &52457989
 Material:
   serializedVersion: 8
